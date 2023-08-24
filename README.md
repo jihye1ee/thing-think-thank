@@ -1,3 +1,3 @@
-### 🖥 Clone Coding - thing think thank
+### 🖥 Clone Coding - think thing thank
 
-- [thing think thank](https://www.thinkthingthank.com/) 클론 코딩
+- [think thing thank](https://www.thinkthingthank.com/) 클론 코딩
