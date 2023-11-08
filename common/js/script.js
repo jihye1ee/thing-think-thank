@@ -57,4 +57,15 @@ window.onload = function() {
   partnerAdmin.addEventListener("mouseout", function() {
     cursor.classList.remove("hover");
   });
+
+  let swiper = new Swiper(".mySwiper", {
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 5000,
+    loop: true,
+    loopAdditionalSlides: 1,
+    slidesPerView: 1,
+  });
 }
