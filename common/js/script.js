@@ -58,14 +58,12 @@ window.onload = function() {
     cursor.classList.remove("hover");
   });
 
-  let swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".about-sec7-swiper", {
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
     },
     speed: 5000,
     loop: true,
-    loopAdditionalSlides: 1,
-    slidesPerView: 1,
   });
 }
