@@ -11,8 +11,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="/common/images/favicon.ico" />
     <link rel="stylesheet" href="/common/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/common/css/style.css">
-    <script src="/common/js/jquery.js"></script>
+    <script src="/common/js/jquery-1.8.2.min.js"></script>
     <script src="/common/js/jquery-ui.min.js"></script>
+    <script src="/common/js/gsap.min.js"></script>
+    <script src="/common/js/ScrollTrigger.min.js"></script>
     <script src="/common/js/swiper-bundle.min.js"></script>
     <script src="/common/js/script.js"></script>
   </head>
@@ -22,7 +24,7 @@
       <header>
         <h1>
           <a href="/index.html">
-            <img src="/common/images/logo.png" alt="think thing thank">
+            <img src="/common/images/logo_white.png" alt="think thing thank">
           </a>
         </h1>
         <ul class="gnb">
@@ -36,40 +38,46 @@
       <div class="about">
         <div class="about-sec1">
           <div class="about-title about-title1">
-            이 세상이
-            <img src="/common/images/about_sec1_img1.png" alt="">
+            <span>
+              이 세상이
+              <img src="/common/images/about_sec1_img1.png" alt="">
+            </span>
           </div>
           <div class="about-title about-title2">
-            <div class="video">
-              <div style="position: relative; padding: 45.83% 0px 0px;">
-                <iframe src="https://player.vimeo.com/video/767208325?h=bf8ba6fbc7&amp;controls=0&amp;autopause=0&amp;background=1" title="work_movement" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+            <span>
+              <div class="video">
+                <div style="position: relative; padding: 45.83% 0px 0px;">
+                  <iframe src="https://player.vimeo.com/video/767208325?h=bf8ba6fbc7&controls=0&autopause=0&background=1" title="work_movement" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+                </div>
               </div>
-            </div>
-            <span>(우리)</span>가 원하는
-            <img src="/common/images/about_sec1_img4.png" alt="">
+              <em>(우리)</em>가 원하는
+              <img src="/common/images/about_sec1_img4.png" alt="">
+            </span>
           </div>
           <div class="about-title about-title3">
-            모습이
-            <img src="/common/images/about_sec1_img2.png" alt="">
-            아니라면
+            <span>
+              모습이
+              <img src="/common/images/about_sec1_img2.png" alt="">
+              아니라면
+            </span>
           </div>
           <div class="about-title about-title4">
-            <img src="/common/images/about_sec1_img5.png" alt="">
-            만들어
-            <img src="/common/images/about_sec1_img3.png" alt="">
-            보자
+            <span>
+              <img src="/common/images/about_sec1_img5.png" alt="">
+              만들어
+              <img src="/common/images/about_sec1_img3.png" alt="">
+              보자
+            </span>
           </div>
         </div>
         <div class="about-sec2">
           <marquee scrollamount="13">think thing thank <span class="playfair">Creative Group</span></marquee>
         </div>
-        <div class="scroll-content background-color-black">
+        <div class="scroll-content">
           <div class="about-sec3">
-            <div class="video-box">
-              <div class="video">
-                <div style="position: relative; padding: 56.25% 0px 0px;">
-                  <iframe src="https://player.vimeo.com/video/767208691?h=fedb957259&amp;controls=0&amp;autopause=0&amp;background=1" title="aboout_new_world" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-                </div>
+            <div class="video">
+              <div style="position: relative; padding: 56.25% 0px 0px;">
+                <iframe src="https://player.vimeo.com/video/767208691?h=fedb957259&amp;controls=0&amp;autopause=0&amp;background=1" title="aboout_new_world" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
               </div>
             </div>
             <div class="text-wrap">
@@ -130,23 +138,34 @@
           <div class="about-sec4 about-philosophy">
             <div class="about-sub-title-wrap">
               <h2>
-                <p>FIRST,</p>
-                <p>WE think</p>
+                <p><span>FIRST,</span></p>
+                <p><span>WE think</span></p>
               </h2>
               <a href="">
-                SEE MORE <br />
-                think(Creative) PROJECT
+                <span>
+                  SEE MORE
+                  <div class="arrow-wrap">
+                    <div class="arrow arrow1"></div>
+                    <div class="arrow arrow2"></div>
+                  </div>
+                  <br />
+                  think(Creative) PROJECT
+                </span>
               </a>
             </div>
             <div class="about-sub-text-wrap">
               <p>
-                Be Freed, With Endless Imagination <br />
-                To Think In Different Perspective
+                <span>
+                  Be Freed, With Endless Imagination <br />
+                  To Think In Different Perspective
+                </span>
               </p>
               <p>
-                자유롭게 상상하며 다양한 관점으로 바라봄으로써 창의적인 기획과 <br />
-                의미있는 디자인으로 관중들에게 특별한 경험과 스토리를 선보이고 <br />
-                모두에게 좋은 영감을 줄 수 있는 프로젝트들을 창출합니다.
+                <span>
+                  자유롭게 상상하며 다양한 관점으로 바라봄으로써 창의적인 기획과 <br />
+                  의미있는 디자인으로 관중들에게 특별한 경험과 스토리를 선보이고 <br />
+                  모두에게 좋은 영감을 줄 수 있는 프로젝트들을 창출합니다.
+                </span>
               </p>
             </div>
             <div class="about-sub-wrap">
@@ -179,23 +198,34 @@
           <div class="about-sec5 about-philosophy">
             <div class="about-sub-title-wrap">
               <h2>
-                <p>THEN,</p>
-                <p>ABOUT thing</p>
+                <p><span>THEN,</span></p>
+                <p><span>ABOUT thing</span></p>
               </h2>
               <a href="">
-                SEE MORE <br />
-                thing(BUSINESS) PROJECT
+                <span>
+                  SEE MORE
+                  <div class="arrow-wrap">
+                    <div class="arrow arrow1"></div>
+                    <div class="arrow arrow2"></div>
+                  </div>
+                  <br />
+                  thing(BUSINESS) PROJECT
+                </span>
               </a>
             </div>
             <div class="about-sub-text-wrap">
               <p>
-                Different Together, We Gather <br />
-                To Make Thing With Good Impact
+                <span>
+                  Different Together, We Gather <br />
+                  To Make Thing With Good Impact
+                </span>
               </p>
               <p>
-                창의적인 요소들을 만드는 것에서 그치지 않고 새로운 경험을 창출하는 <br />
-                의미있는 순간과 모든 세상에 긍정적 영향이 발현될 수 있기 위한 <br />
-                지속가능성을 항상 생각합니다.
+                <span>
+                  창의적인 요소들을 만드는 것에서 그치지 않고 새로운 경험을 창출하는 <br />
+                  의미있는 순간과 모든 세상에 긍정적 영향이 발현될 수 있기 위한 <br />
+                  지속가능성을 항상 생각합니다.
+                </span>
               </p>
             </div>
             <div class="about-sub-wrap">
@@ -209,6 +239,7 @@
                   BUSINESS
                 </p>
               </div>
+              <div class="line"></div>
               <div class="about-sub">
                 <img src="/common/images/O&O.gif" alt="O&O METAVERSE THE INTEGRATION AND INTERACTION OF ONLINE AND OFFLINE, A LIMITLESS VOID WITH ENDLESS EXPERIENCE AND CONTENTS.">
               </div>
@@ -217,23 +248,34 @@
           <div class="about-sec6 about-philosophy">
             <div class="about-sub-title-wrap">
               <h2>
-                <p>JUST,</p>
-                <p>TO thank</p>
+                <p><span>JUST,</span></p>
+                <p><span>TO thank</span></p>
               </h2>
               <a href="">
-                SEE MORE <br />
-                thing(SOCIAL) PROJECT
+                <span>
+                  SEE MORE
+                  <div class="arrow-wrap">
+                    <div class="arrow arrow1"></div>
+                    <div class="arrow arrow2"></div>
+                  </div>
+                  <br />
+                  thing(SOCIAL) PROJECT
+                </span>
               </a>
             </div>
             <div class="about-sub-text-wrap">
               <p>
-                Love Life, Sharing Good Energy <br />
-                To Make The World Meaningful
+                <span>
+                  Love Life, Sharing Good Energy <br />
+                  To Make The World Meaningful
+                </span>
               </p>
               <p>
-                최종적으로 긍정적인 것들이 계속 유지될 수 있는 <br />
-                지속가능성을 통해 사회 전체에 긍정적인 영향을 <br />
-                창출하고 나타낼 수 있도록 합니다.
+                <span>
+                  최종적으로 긍정적인 것들이 계속 유지될 수 있는 <br />
+                  지속가능성을 통해 사회 전체에 긍정적인 영향을 <br />
+                  창출하고 나타낼 수 있도록 합니다.
+                </span>
               </p>
             </div>
             <div class="about-sub-wrap">
@@ -257,88 +299,128 @@
             </div>
           </div>
           <div class="about-sec7">
-            <h2><span class="playfair">O</span>ur A<span class="playfair">tt</span>itude</h2>
-            <div class="about-sec7-swiper">
-              <div class="rolling swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="text-box">
-                    <p>BE<sup class="playfair">(a)</sup></p>
-                    <p>FREE</p>
-                  </div>
-                  <img src="/common/images/about_our_attitude_img1.png" alt="" class="attitude-img1">
+            <h2>
+              <p>
+                <span class="playfair">O</span>ur A<span class="playfair">tt</span>itude
+              </p>
+            </h2>
+            <div class="attitude-wrap">
+              <div class="attitude-item">
+                <div class="text-box">
+                  <p>BE<sup class="playfair">(a)</sup></p>
+                  <p>FREE</p>
                 </div>
-                <div class="swiper-slide">
-                  <div class="text-box">
-                    <p>DIFFERENT<sup class="playfair">(b)</sup></p>
-                    <p>TOGETHER</p>
-                  </div>
-                  <img src="/common/images/about_our_attitude_img2.png" alt="" class="attitude-img2">
+                <img src="/common/images/about_our_attitude_img1.png" alt="" class="attitude-img1">
+              </div>
+              <div class="attitude-item">
+                <div class="text-box">
+                  <p>DIFFERENT<sup class="playfair">(b)</sup></p>
+                  <p>TOGETHER</p>
                 </div>
-                <div class="swiper-slide">
-                  <div class="text-box">
-                    <p>LOVE<sup class="playfair">(c)</sup></p>
-                    <p>LIFE</p>
-                  </div>
-                  <img src="/common/images/about_our_attitude_img3.png" alt="" class="attitude-img3">
+                <img src="/common/images/about_our_attitude_img2.png" alt="" class="attitude-img2">
+              </div>
+              <div class="attitude-item">
+                <div class="text-box">
+                  <p>LOVE<sup class="playfair">(c)</sup></p>
+                  <p>LIFE</p>
                 </div>
+                <img src="/common/images/about_our_attitude_img3.png" alt="" class="attitude-img3">
               </div>
             </div>
             <div class="text">
-              <p>그리고 이를 위해 띵띵땡은,</p>
-              <p><span class="playfair">(a)</span> 자유로운 관점으로 세상을 바라보며</p>
-              <p><span class="playfair">(b)</span> 서로 다르더라도 다르기에 함께 모여</p>
-              <p><span class="playfair">(c)</span> 서로 사랑하고 존중하며 나아가고 있습니다.</p>
+              <p>
+                <em>그리고 이를 위해 띵띵땡은,</em>
+              </p>
+              <p>
+                <em><span class="playfair">(a)</span> 자유로운 관점으로 세상을 바라보며</em>
+              </p>
+              <p>
+                <em><span class="playfair">(b)</span> 서로 다르더라도 다르기에 함께 모여</em>
+              </p>
+              <p>
+                <em><span class="playfair">(c)</span> 서로 사랑하고 존중하며 나아가고 있습니다.</em>
+              </p>
             </div>
           </div>
           <div class="about-sec8">
             <img src="/common/images/about_sec8_img1.png" alt="">
             <h2>
               <p>
-                AND,
-                <span class="img-wrap">
-                  <img src="/common/images/about_sec8_img2.png" alt="think thing thank" class="white-img">
-                  <img src="/common/images/about_sec8_img2_black.png" alt="think thing thank" class="black-img">
-                </span>
+                <em>
+                  AND,
+                  <span class="img-wrap">
+                    <img src="/common/images/about_sec8_img2.png" alt="think thing thank">
+                  </span>
+                </em>
               </p>
-              <p>MAKING GOOD</p>
-              <p class="playfair">Movement</p>
+              <p><em>MAKING GOOD</em></p>
+              <p><em class="playfair">Movement</em></p>
             </h2>
             <img src="/common/images/about_sec8_img3.png" alt="">
             <div class="text">
-              <p>띵띵땡은 사람과 사물을 관찰하고 이에 따른 <span>스토리 디자인</span>을 지향합니다.</p>
-              <p>이런 과정을 통해서 한개, 한개의 프로젝트가 세상에 나올 때마다 조금씩이지만</p>
-              <p>세상은 <span>재미있는 이야기들</span>로 채워져 나갈 수 있다고 믿습니다.</p>
-              <p><span>상상만 해도 얼마나 즐거운 일인가요!</span></p>
+              <p><em>띵띵땡은 사람과 사물을 관찰하고 이에 따른 <span>스토리 디자인</span>을 지향합니다.</em></p>
+              <p><em>이런 과정을 통해서 한개, 한개의 프로젝트가 세상에 나올 때마다 조금씩이지만</em></p>
+              <p><em>세상은 <span>재미있는 이야기들</span>로 채워져 나갈 수 있다고 믿습니다.</em></p>
+              <p><em><span>상상만 해도 얼마나 즐거운 일인가요!</span></em></p>
             </div>
           </div>
           <div class="about-sec9">
             <h2>
-              <p>View <span class="playfair">Pro</span>ject</p>
-              <p>(All <span class="playfair">Pro</span>ject)</p>
+              <p>
+                <em>
+                  View <span class="playfair">Pro</span>ject
+                </em>
+              </p>
+              <a href="#">
+                <em>
+                  <span>(</span>All <span class="playfair">Pro</span>ject
+                  <span>
+                    <div class="arrow-wrap">
+                      <div class="arrow arrow1"></div>
+                      <div class="arrow arrow2"></div>
+                    </div>)
+                  </span>
+                </em>
+              </a>
             </h2>
             <div class="project-list">
               <div class="list-item">
-                <p class="title">THINK THING THANK CREATIVE GROUP WEBSITE Website Design</p>
-                <p class="category playfair">(BI), (BX), (GUI)</p>
-                <div class="video-wrap">
-                  <div class="video">
-                    <iframe src="https://player.vimeo.com/video/852543058?h=ced806c4c6&amp;controls=0&amp;autopause=0&amp;background=1" title="title1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
-                  </div>
+                <div class="title-wrap">
+                  <p class="title">
+                    MYSTERY PC PC Bang Brand
+                    <span class="category playfair">(BI), (BX), (GUI), (BDX), (BM)</span>
+                  </p>
+                  <p class="category playfair"></p>
+                </div>
+                <div class="img-wrap">
+                  <img src="/common/images/project-img1.jpg" alt="WA WEB AWARD 23 WINNER MYSTERY PC - EXPERIENCING MYSTERIES OF DIVERSE WORLDS">
                 </div>
               </div>
               <div class="list-item">
-                <p class="title">1000 SEATS 1000 FEELINGS 1000 WORDS Community Rehabilitation Center</p>
-                <p class="category playfair">(UX), (SI)</p>
+                <div class="title-wrap">
+                  <p class="title">
+                    THINK THING THANK CREATIVE GROUP WEBSITE Website Design
+                    <span class="category playfair">(BI), (BX), (GUI)</span>
+                  </p>
+                </div>
                 <div class="video-wrap">
                   <div class="video">
-                    <iframe src="https://player.vimeo.com/video/820744858?h=b1f8fe4c24&amp;controls=0&amp;autopause=0&amp;background=1" title="title1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+                    <iframe src="https://player.vimeo.com/video/852543058?h=ced806c4c6&controls=0&autopause=0&background=1" title="title1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="about-sec10">
-            <h2>Work with <span class="playfair">us</span>!</h2>
+            <h2>
+              <div>
+                <p>Work with <span class="playfair">us</span>!</p>
+                <div class="arrow-wrap">
+                  <div class="arrow arrow1"></div>
+                  <div class="arrow arrow2"></div>
+                </div>
+              </div>
+            </h2>
           </div>
         </div>
       </div>
