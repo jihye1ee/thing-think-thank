@@ -1,9 +1,14 @@
 window.onload = function() {
   const $cursor = document.querySelector(".cursor");
+  const $logo = document.querySelector("header h1 a");
   const $gnbItems = document.querySelectorAll(".gnb li a");
   const $circles = document.querySelectorAll(".circle-wrap .circle");
   const $backgrounds = document.querySelectorAll(".background-wrap .background");
   const $partnerAdmin = document.querySelector(".right-wrap > a");
+  const $philosophyLinks = document.querySelectorAll(".about-philosophy .about-sub-title-wrap a");
+  const $viewProjectButton = document.querySelector(".about-sec9 h2 a");
+  const $projectListItems = document.querySelectorAll(".about-sec9 .project-list .list-item");
+  const $workButton = document.querySelector(".about-sec10 h2");
 
   const animateText = (selector) => {
     gsap.to(selector, {
@@ -46,6 +51,13 @@ window.onload = function() {
   window.addEventListener("mousemove", cursorMove);
   window.addEventListener("scroll", scrollAnimation);
 
+  $logo.addEventListener("mouseover", function() {
+    $cursor.classList.add("hover");
+  });
+  $logo.addEventListener("mouseout", function() {
+    $cursor.classList.remove("hover");
+  });
+
   $gnbItems.forEach((item) => {
     item.addEventListener("mouseover", function() {
       $cursor.classList.add("hover");
@@ -70,6 +82,38 @@ window.onload = function() {
     $cursor.classList.add("hover");
   });
   $partnerAdmin.addEventListener("mouseout", function() {
+    $cursor.classList.remove("hover");
+  });
+
+  $philosophyLinks.forEach((item) => {
+    item.addEventListener("mouseover", function() {
+      $cursor.classList.add("hover");
+    });
+    item.addEventListener("mouseout", function() {
+      $cursor.classList.remove("hover");
+    });
+  });
+
+  $viewProjectButton.addEventListener("mouseover", function() {
+    $cursor.classList.add("hover");
+  });
+  $viewProjectButton.addEventListener("mouseout", function() {
+    $cursor.classList.remove("hover");
+  });
+
+  $projectListItems.forEach((item) => {
+    item.addEventListener("mouseover", function() {
+      $cursor.classList.add("hover");
+    });
+    item.addEventListener("mouseout", function() {
+      $cursor.classList.remove("hover");
+    });
+  });
+
+  $workButton.addEventListener("mouseover", function() {
+    $cursor.classList.add("hover");
+  });
+  $workButton.addEventListener("mouseout", function() {
     $cursor.classList.remove("hover");
   });
 
